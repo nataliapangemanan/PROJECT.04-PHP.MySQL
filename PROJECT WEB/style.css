@@ -1,0 +1,166 @@
+body {
+    background-image: url('BG.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #12372A;
+}
+
+
+header {
+    background-color: #12372A;
+    color: #FBFADA;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 5px;j
+    animation: fadeInUp 2s ease-out;
+
+}
+
+.content {
+    background-color: #ADBC9F;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+h2 {
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #12372A;
+    color: #FBFADA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #456;
+}
+
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #FBFADA;
+}
+/* Gaya untuk tombol "Lihat Selengkapnya" */
+.show-more {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #12372A;
+    color: #FBFADA;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.show-more:hover {
+    background-color: #456;
+}
+
+/* Gaya untuk bingkai pada foto di galeri */
+.gallery-content img {
+    border: 2px solid #12372A;
+    border-radius: 5px;
+    margin: 5px;
+}
+.content .expandable-content {
+    display: none;
+}
+
+.expanded {
+    display: block;
+}
+
+/* Gaya untuk animasi ketika konten diperluas */
+.expand-animation {
+    animation: expand 0.5s forwards;
+}
+
+#home {
+    background-color: #ffc107;
+}
+
+#gallery {
+    background-color: #28a745; 
+ 
+}
+
+#blog {
+    background-color: #007bff;
+}
+
+#contact {
+    background-color: #dc3545;
+}
+
+@media (min-width: 768px) {
+    .content {
+        max-width: 600px;
+        margin: 20px auto;
+    }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes expand {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to {
+        height: auto;
+        opacity: 1;
+    }
+}
+.content {
+    animation: fadeInUp 2s ease-out;
+}
